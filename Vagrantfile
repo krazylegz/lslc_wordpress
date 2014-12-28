@@ -68,6 +68,7 @@ Vagrant.configure(2) do |config|
   #   sudo apt-get install apache2
   # SHELL
   config.vm.provision :puppet do |puppet|
+    puppet.hiera_config_path = 'heira.yml'
     puppet.manifest_file = 'wordpress.pp'
     puppet.module_path = 'modules'
   end
