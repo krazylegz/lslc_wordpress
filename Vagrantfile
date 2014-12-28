@@ -67,5 +67,8 @@ Vagrant.configure(2) do |config|
   # config.vm.provision "shell", inline <<-SHELL
   #   sudo apt-get install apache2
   # SHELL
-  config.vm.provision :puppet
+  config.vm.provision :puppet do |puppet|
+    puppet.manifest_file = 'wordpress.pp'
+    puppet.module_path = 'modules'
+  end
 end
