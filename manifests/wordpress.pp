@@ -1,6 +1,6 @@
 import 'php-webserver'
 
-node default {
+node 'lancasterlibraries.org' {
   include php-webserver
   
   file { '/var/www/':

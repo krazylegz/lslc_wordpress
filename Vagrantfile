@@ -72,7 +72,7 @@ Vagrant.configure(2) do |config|
     puppet.manifest_file = 'wordpress.pp'
     puppet.module_path = 'modules'
     puppet.facter = {
-      'fqdn' => 'vagrant-ubuntu-trusty-64'
+      'fqdn' => 'lancasterlibraries.org'
     }
   end
 end
