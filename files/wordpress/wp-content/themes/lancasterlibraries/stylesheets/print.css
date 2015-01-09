@@ -1,0 +1,53 @@
+/* PRINT STYLES*/
+
+a { color:#000; text-decoration:none; }
+
+a img{ border:none; }
+
+p{ margin:0; padding:0; margin-bottom:7px; }
+
+#browserBackground {background:none}
+
+#background {background:none}
+
+#siteBackground {width:100%; text-align:left; padding:.35in; background: none; } 
+
+#siteWrapper{ width:100%; background:none; }
+
+#columnsWrapper {background: none;text-align:left; width:100%;}
+
+/* HEADER .......................*/
+
+#headerWrapper {display:none;}
+
+#printHeader { display:block; font:normal 8pt/10pt arial; margin-top:.35in; padding-left:.35in;}
+#printHeader strong{font-size:11pt; line-height:14pt !important}
+
+/* NAV .......................*/
+
+#navWrapper { vertical-align:top; background:none; border-right:hidden; padding-bottom:35px; width:0;}
+
+#leftColumn {display:none;}
+
+#navWrapper{ width:0;}
+
+#nav {display:none; }
+
+/* CONTENT .......................*/
+
+#contentWrapper{text-align:left; width:100%;}
+
+#columns{ width:100%; text-align:left; background-image:none }
+
+#content{ vertical-align:top; text-align:left; padding:0; }
+
+#content, #content td{ font:normal 11pt/16pt verdana; color:#000;}
+
+.page-heading{ font:normal 22pt/25pt 'times new roman', times; color:#668362; }
+
+.section-heading{ font:bold 14pt/16pt arial; color:#668362;}
+
+/* FOOTER .......................*/
+
+#footerWrapper{ display:none;}
+
