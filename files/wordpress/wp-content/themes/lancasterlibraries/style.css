@@ -11,3 +11,150 @@
  Tags:         lancaster library lancasterlibraries
  Text Domain:  lancasterlibraries
 */
+
+.hidden	{ display:none; }
+body { font-family: 'Verdana,Arial,Geneva'; font-size: '10pt'; margin:0; padding:0;  }
+a:active { color: #0099FF }
+a, a:link, a:visited { color:#095BA6; text-decoration:none; }
+a:hover { color: #6DC92B; }
+a:active, a:focus { text-decoration: underline; }
+a.pageopposite { color: #ffffff }
+a.banner { color: #FFFFFF; text-decoration: none; }
+a img{ border:none; }
+a.redlink, a.redlink:link, a.redlink:visited { color: #800000; text-decoration: none; }
+a.redlink:hover { color:#095BA6; }
+a.redlink:active, .redlink a:focus { text-decoration:underline; }
+
+.schemecolor1 { background-color: #233C64 }
+.schemecolor2 { background-color: #666666 }
+.textcolor1 { color: #233C64 }
+.textcolor2 { color: #666666 }
+td { font-family: 'Verdana,Arial,Geneva'; font-size: '10pt'; }
+p { margin: 0; padding: 0; margin-bottom: 7px; }
+#siteBackground { width: 100%; background: #fff url(../lib/lslc/images/gui/backrnd-top.jpg) repeat-x; height: 470px; padding-top: 10px; }
+#siteWrapper { width: 863px; background: url(../lib/lslc/images/gui/content-backrnd.gif) repeat-y; margin: 0 auto; }
+#printHeader { display:none; }
+#headerWrapper { width: 863px; background: #fff url(../lib/lslc/images/gui/header-backrnd.gif) no-repeat; height: 103px; position: relative; z-index: 50;}
+#headerLogo { position: absolute; left: 32px; top: 6px; }
+#accountLogin { position:absolute; font:bold 10px tahoma; left:665px; top:108px; z-index: 20; }
+#searchcatalog{ position:absolute; left:755px; top:36px;}
+#menuWrapper{ position:absolute;  top:53px;  left:555px; z-index:250;}
+#menuHowDoI a { position:absolute; height:24px; display:block; text-indent:-3000px; text-decoration:none; background-position:0 0; width:182px; background-image:url(../lib/lslc/images/gui/header-menu.gif); border:solid 2px #fff; left: 0px; }
+#menuHowDoI a:hover { background-position:0 0; }
+#linksHowDoI{ position:absolute; z-index:500; left:0px; width:182px; background-color: #fff; background-color:#F1F7FC; top:27px; text-align:left; visibility: hidden;}
+#linksHowDoI a { display:block; padding: 5px 18px; text-align:left; font: normal 10px/13px verdana; border-bottom:solid 1px #ededed; text-decoration:none; color:#666; }
+#linksHowDoI a:hover{ background-color:#CDE6F6;  }
+#navWrapper{ border-right:solid 1px #ccc; padding-right:20px; width:180px; voice-family:inherit; width:160px; text-align:left; vertical-align:top;}
+#nav{ text-align:left; margin-bottom:50px;}
+#nav a { display:block; margin:0px; padding:7px 10px; font:normal 14px/16px arial; color:#545454; background:url(../lib/lslc/images/dottedline-horiz.gif) repeat-x left top; text-decoration:none; cursor:pointer;}
+#nav a:link,#nav  a:active, #nav a:visited { color:#545454;}
+#nav a:hover{ color:#6DC92B; text-decoration:none; }
+#nav .subnav {padding-bottom:5px;}
+#nav .subnav a { display:block; cursor:pointer; margin-left:15px; padding:0 10px 5px 10px; font:normal 13px/15px arial; color:#545454; text-decoration:none; background:url(../lib/lslc/images/gui/leftnav-bullet.gif) no-repeat 0 4px;}
+#nav .subnav a:link, #nav .subnav a:active, #nav .subnav a:visited{ color:#545454;}
+#nav .subnav a:hover{ color:#6DC92B; text-decoration:none;}
+#contentWrapper{ width:820px; margin-top:25px; margin-bottom:30px;}
+#contentWrapper td {font-family:verdana; font-size:12px; line-height:17px; color:#3f3116; text-align:left;}
+#content{ vertical-align:top; text-align:left; padding-left:20px; }
+.page-heading{ font:bold 20px/24px 'trebuchet ms', tahoma, arial; color:#000066;  }
+.section-heading{ font:bold 12px/15px tahoma, verdana; color:#000066; text-transform:uppercase; letter-spacing:1px;  }
+*.section-heading2{ font:bold 12px/15px tahoma, verdana; color:#743A8E; letter-spacing:1px;  }
+.redlink{ font-weight:bold; }
+.smaller-font{ font-size:10px; line-height:14px; }
+.dotted-line { height:22px; width:100%; background:url(../lib/lslc/images/dottedline-horiz.gif) repeat-x 0 50%; display:block }
+#footerWrapper{ width:820px; height:54px; background:url(../lib/lslc/images/gui/footer-backrnd.gif) no-repeat; vertical-align:top;  }
+#footerLinks{ float:left; display:block; margin-left:20px; margin-top:14px; margin-bottom:10px; font:normal 11px tahoma, arial; color:#c9c9c9; }
+#copyright { float:right; margin-right:20px; margin-top:14px; margin-bottom:10px; font:normal 10px arial; color:#999999;}
+#copyright2 { float:right; margin-right:20px; margin-top:14px; font:normal 10px arial; color:#000000;}
+#welcome {position:relative; width:620px; height: 260px; z-index:10; margin-bottom:25px;}
+#welcome #bookmobile {position:absolute; left:425px; top:186px;z-index:35; width:144px; text-align:center; font:normal 10px/10px verdana !important;}
+#welcome #bookmobile a {font:normal 10px/10px verdana !important;}
+#welcome #localButton {position:absolute; left:412px; top:140px; z-index:40; }
+.hr80  {align:center; height=1px; width=80%; }
+#newAndNoteworthy { margin-top:20px; margin-bottom:15px; width:215px; text-align:left; background:#EDEDED url(../lib/lslc/images/title-noteworthy-bottom.gif) no-repeat 0 100%; padding-bottom:10px; line-height:15px;}
+#newAndNoteworthy a{ padding:7px 7px; border-top:solid 1px #fff; text-align:center; display:block;}
+.library-name-local-news{ font:bold 11px/14px verdana; color:#743A8E; text-transform:uppercase; text-align:left}
+.photo-left { float:left; margin-right:10px; margin-top:3px; }
+.photo-right { float:right; margin-left:10px; margin-top:3px; }
+#onlineResources { margin-top:25px; width:100%; border-top:solid 1px #d3d3d3; }
+#onlineResources a img { border:solid 1px #fff; }
+#onlineResources a:hover img { border:solid 1px #6DC92B; }
+
+#p7PMnav {
+	margin:0; margin-top:0px;
+	padding:0;
+	display:block;
+	float:right;
+}
+#p7PMnav li {
+	list-style-type: none;
+	margin: 0;
+	text-align:left;
+}
+#p7PMnav ul {
+	margin: 0;
+	padding: 0;
+	border: 1px solid #dddddd;
+	background-color:#173f6e;
+	position: absolute;
+	left: -9000px;
+	z-index: 10000;
+}
+#p7PMnav ul li {
+border-bottom: 1px solid #cccccc;
+}
+#p7PMnav ul ul {
+border-top: 2px solid #999999;
+}
+#p7PMnav a {
+	display: block;
+	padding:5px 10px 5px 15px;
+	font:bold 10px/13px verdana;
+    text-decoration:none;
+    color:#ffffff;
+}
+#p7PMnav ul a {
+	border: 0;
+}
+#p7PMnav a:hover, #p7PMnav a:active, #p7PMnav a:focus,
+#p7PMnav .p7PMon, #p7PMnav .p7PMon:hover,
+#p7PMnav .p7PMon:active {
+	text-align:left;
+		display:block;
+		background-color:#ededed;
+		color:#000099;
+}
+/* ------ the current page marker style ------ */
+#p7PMnav .p7PMmark, #p7PMnav .p7PMmark:hover {
+	font-weight: bold;
+}
+/* ------ the trigger link styles ------- */
+/*the normal trigger link */
+#p7PMnav ul .p7PMtrg, #p7PMnav ul .p7PMtrg:hover, #p7PMnav ul .p7PMtrg:active {
+background: #000099 url(../assets/templates/nav/arrow.gif) no-repeat right center;
+}
+#p7PMnav .p7PMtrg:hover {
+	color: #ffffff;
+	background:#000099 url(../assets/templates/nav/arrow.gif) no-repeat right center;
+}
+/*the submenu classes */
+#p7PMnav .p7PMhide {
+	left: -9000px;
+	border: 0;
+}
+#p7PMnav .p7PMshow {
+	left: auto;
+	z-index: 20000 !important;
+}
+/* Top level menu width */
+#p7PMnav li {
+	float: left;
+	width: 165px;
+}
+#p7PMnav ul li {
+	float: none;
+}
+/* 2nd and subsequent Submenu widths */
+#p7PMnav ul, #p7PMnav ul li {
+	width: 185px;
+}
