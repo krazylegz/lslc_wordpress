@@ -9,6 +9,7 @@ class php-webserver {
   package { nginx: ensure => latest }
   package { php5-fpm: ensure => latest }
   package { php5-mysql: ensure => latest }
+  package { varnish: ensure => latest }
 
   file { '/etc/nginx/sites-available/default':
     ensure => 'file',
@@ -27,6 +28,26 @@ class php-webserver {
     source => '/vagrant/files/etc/php5/fpm/php.ini',
     require => Package['php5-fpm'],
     notify => Service['php5-fpm']
+  }
+
+  file { '/etc/default/varnish':
+    ensure => 'file',
+    mode => '0644',
+    owner => 'root',
+    group => 'root',
+    source => '/vagrant/files/etc/default/varnish',
+    require => Package['varnish'],
+    notify => Service['varnish']
+  }
+
+  file { '/etc/varnish/default.vcl':
+    ensure => 'file',
+    mode => '0644',
+    owner => 'root',
+    group => 'root',
+    source => '/vagrant/files/etc/varnish/default.vcl',
+    require => Package['varnish'],
+    notify => Service['varnish']
   }
 
   group { 'www-data':
@@ -51,5 +72,10 @@ class php-webserver {
     ensure => 'running',
     enable => 'true',
     require => Package['php5-fpm']
+  }
+  service { 'varnish':
+    ensure => 'running',
+    enable => 'true',
+    require => Package['varnish']
   }
 }
