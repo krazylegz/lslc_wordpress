@@ -1,4 +1,9 @@
 class php-webserver {
+  exec { 'apt-update':
+         command => '/usr/bin/apt-get update'
+  }
+
+  Exec["apt-update"] -> Package <| |>
   class { 'mysql::client': }
   class { 'mysql::server': }
   package { nginx: ensure => latest }
