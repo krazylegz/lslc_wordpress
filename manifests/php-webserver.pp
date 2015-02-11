@@ -6,10 +6,10 @@ class php-webserver {
 
   class { 'mysql::client': }
   class { 'mysql::server': }
-  package { nginx: ensure => latest }
-  package { php5-fpm: ensure => latest }
-  package { php5-mysql: ensure => latest }
-  package { varnish: ensure => latest }
+  package { nginx: ensure => present }
+  package { php5-fpm: ensure => present }
+  package { php5-mysql: ensure => present }
+  package { varnish: ensure => present }
 
   file { '/etc/nginx/sites-available/default':
     ensure => 'file',
